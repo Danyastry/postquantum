@@ -1,0 +1,47 @@
+<resources>
+    <string name="mldsa_intro">ML-DSA signs data with a private key, and anyone with the public key can check it. Like ML-KEM it is built on lattices, so a quantum computer cannot forge it the way it could forge RSA or ECDSA.</string>
+    <string name="mldsa_level_44">44</string>
+    <string name="mldsa_level_65">65</string>
+    <string name="mldsa_level_87">87</string>
+    <string name="mldsa_level_hint">NIST category %1$d</string>
+    <string name="mldsa_step_keys">1. Make a key pair</string>
+    <string name="mldsa_generate">Generate key pair</string>
+    <plurals name="mldsa_public_key">
+        <item quantity="one">Public key: %1$d byte</item>
+        <item quantity="other">Public key: %1$d bytes</item>
+    </plurals>
+    <plurals name="mldsa_private_key">
+        <item quantity="one">Private key: %1$d byte, stored as a %2$d-byte seed</item>
+        <item quantity="other">Private key: %1$d bytes, stored as a %2$d-byte seed</item>
+    </plurals>
+    <string name="mldsa_fingerprint">Fingerprint: %1$s</string>
+    <string name="mldsa_step_sign">2. Sign</string>
+    <string name="mldsa_message_label">Message</string>
+    <string name="mldsa_context_label">Context</string>
+    <string name="mldsa_context_hint">A label that binds the signature to one purpose. A signature made for payments will not pass as a login.</string>
+    <string name="mldsa_context_too_long">Context is at most 255 bytes</string>
+    <string name="mldsa_mode_hedged">Hedged</string>
+    <string name="mldsa_mode_deterministic">Deterministic</string>
+    <string name="mldsa_mode_hedged_hint">The FIPS 204 default. Fresh randomness goes into every signature, which also protects against fault attacks.</string>
+    <string name="mldsa_mode_deterministic_hint">No randomness, for devices without a good random source. The same message always gives the same signature.</string>
+    <string name="mldsa_sign">Sign</string>
+    <plurals name="mldsa_signature">
+        <item quantity="one">Signature: %1$d byte</item>
+        <item quantity="other">Signature: %1$d bytes</item>
+    </plurals>
+    <string name="mldsa_signature_fingerprint">Signature fingerprint: %1$s</string>
+    <string name="mldsa_same_as_previous">Same as the previous signature</string>
+    <string name="mldsa_different_from_previous">Different from the previous signature</string>
+    <string name="mldsa_flip_bit">Flip one bit in the signature</string>
+    <string name="mldsa_tampered">One bit of the signature was flipped</string>
+    <string name="mldsa_step_verify">3. Verify</string>
+    <string name="mldsa_verify_hint">Change one letter of the message or the context and watch the result.</string>
+    <string name="mldsa_check_message_label">Message to check</string>
+    <string name="mldsa_check_context_label">Context to check</string>
+    <string name="mldsa_valid">Valid: signed by this key, for this message and context</string>
+    <string name="mldsa_invalid">Invalid: the message, the context or the signature changed</string>
+    <string name="mldsa_sizes_title">Next to classical signatures</string>
+    <string name="mldsa_sizes_signature">Signature: %1$d vs 64 bytes for Ed25519, %2$s× bigger</string>
+    <string name="mldsa_sizes_public_key">Public key: %1$d vs 32 bytes for Ed25519, %2$s× bigger</string>
+    <string name="mldsa_sizes_note">ECDSA P-256 signatures are about 71 bytes. Post-quantum signatures cost space, which matters for certificates that carry several of them.</string>
+</resources>
