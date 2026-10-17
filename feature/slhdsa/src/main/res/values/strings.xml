@@ -1,0 +1,49 @@
+<resources>
+    <string name="slhdsa_intro">SLH-DSA rests only on the security of a hash function, the most studied tool in cryptography. NIST keeps it as a backup in case lattice schemes like ML-DSA are ever broken.</string>
+    <string name="slhdsa_strength_128">128</string>
+    <string name="slhdsa_strength_192">192</string>
+    <string name="slhdsa_strength_256">256</string>
+    <string name="slhdsa_variant_small">Small</string>
+    <string name="slhdsa_variant_fast">Fast</string>
+    <string name="slhdsa_hash_sha2">SHA-2</string>
+    <string name="slhdsa_hash_shake">SHAKE</string>
+    <string name="slhdsa_parameters">%1$s, NIST category %2$d</string>
+    <string name="slhdsa_variant_hint_small">Small signatures, slow signing</string>
+    <string name="slhdsa_variant_hint_fast">Fast signing, bigger signatures</string>
+    <string name="slhdsa_step_keys">1. Make a key pair</string>
+    <string name="slhdsa_generate">Generate key pair</string>
+    <string name="slhdsa_generating">Generating…</string>
+    <plurals name="slhdsa_public_key">
+        <item quantity="one">Public key: %1$d byte</item>
+        <item quantity="other">Public key: %1$d bytes</item>
+    </plurals>
+    <plurals name="slhdsa_private_key">
+        <item quantity="one">Private key: %1$d byte</item>
+        <item quantity="other">Private key: %1$d bytes</item>
+    </plurals>
+    <string name="slhdsa_fingerprint">Fingerprint: %1$s</string>
+    <string name="slhdsa_took">Took %1$d ms</string>
+    <string name="slhdsa_step_sign">2. Sign</string>
+    <string name="slhdsa_message_label">Message</string>
+    <string name="slhdsa_sign">Sign</string>
+    <string name="slhdsa_signing">Signing…</string>
+    <string name="slhdsa_signing_slow">Small variants build a big hash tree, so signing takes a while</string>
+    <plurals name="slhdsa_signature">
+        <item quantity="one">Signature: %1$d byte</item>
+        <item quantity="other">Signature: %1$d bytes</item>
+    </plurals>
+    <string name="slhdsa_flip_bit">Flip one bit in the signature</string>
+    <string name="slhdsa_tampered">One bit of the signature was flipped</string>
+    <string name="slhdsa_step_verify">3. Verify</string>
+    <string name="slhdsa_verify_hint">Change a letter of the message above, then verify again</string>
+    <string name="slhdsa_verify">Verify</string>
+    <string name="slhdsa_verifying">Verifying…</string>
+    <string name="slhdsa_valid">Valid, checked in %1$d ms</string>
+    <string name="slhdsa_invalid">Invalid, checked in %1$d ms</string>
+    <string name="slhdsa_sizes_title">Signature sizes</string>
+    <string name="slhdsa_sizes_note">Keys are tiny, signatures are big. For comparison: ML-DSA-65 signs in 3,309 bytes and Ed25519 in 64.</string>
+    <plurals name="slhdsa_size_row">
+        <item quantity="one">%1$s: %2$d byte</item>
+        <item quantity="other">%1$s: %2$d bytes</item>
+    </plurals>
+</resources>
