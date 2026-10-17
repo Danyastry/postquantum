@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Post-Quantum</string>
+    <string name="catalog_empty">No features yet</string>
+    <string name="navigate_back">Back</string>
+</resources>

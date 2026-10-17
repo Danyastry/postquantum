@@ -1,0 +1,12 @@
+<resources>
+    <string name="category_key_exchange">Key exchange</string>
+    <string name="category_signatures">Signatures</string>
+    <string name="category_hybrid">Hybrid</string>
+    <string name="category_comparison">Comparison</string>
+    <string name="category_key_exchange_description">Agree on a secret that a quantum computer cannot recover</string>
+    <string name="category_signatures_description">Prove who signed, even against a quantum attacker</string>
+    <string name="category_hybrid_description">Classical and post-quantum together, as TLS does today</string>
+    <string name="category_comparison_description">Sizes and speed next to RSA and elliptic curves</string>
+    <string name="requirement_android">Android %1$s+</string>
+    <string name="requirement_needs_android">Needs Android %1$s</string>
+</resources>
