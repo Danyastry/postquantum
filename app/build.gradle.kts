@@ -26,6 +26,8 @@ android {
 dependencies {
     implementation(projects.core.ui)
 
+    implementation(projects.feature.mlkem)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.navigation.compose)

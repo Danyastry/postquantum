@@ -1,0 +1,47 @@
+<resources>
+    <string name="mlkem_intro">ML-KEM lets two sides agree on a 32-byte secret over an open channel. Its security rests on lattice problems that quantum computers are not known to break, unlike RSA and elliptic curves.</string>
+    <string name="mlkem_level_512">512</string>
+    <string name="mlkem_level_768">768</string>
+    <string name="mlkem_level_1024">1024</string>
+    <string name="mlkem_level_hint">NIST category %1$d, about as hard to break as AES-%2$d</string>
+    <string name="mlkem_step_keys">1. Bob makes a key pair</string>
+    <string name="mlkem_generate">Generate key pair</string>
+    <plurals name="mlkem_encapsulation_key">
+        <item quantity="one">Encapsulation key (public): %1$d byte</item>
+        <item quantity="other">Encapsulation key (public): %1$d bytes</item>
+    </plurals>
+    <plurals name="mlkem_decapsulation_key">
+        <item quantity="one">Decapsulation key (stays with Bob): %1$d byte, stored as a %2$d-byte seed</item>
+        <item quantity="other">Decapsulation key (stays with Bob): %1$d bytes, stored as a %2$d-byte seed</item>
+    </plurals>
+    <string name="mlkem_fingerprint">Fingerprint: %1$s</string>
+    <string name="mlkem_step_encapsulate">2. Alice encapsulates a secret</string>
+    <string name="mlkem_encapsulate_hint">Alice uses only Bob\'s public key. She gets a fresh secret and a ciphertext to send back.</string>
+    <string name="mlkem_encapsulate">Encapsulate</string>
+    <plurals name="mlkem_ciphertext">
+        <item quantity="one">Ciphertext sent to Bob: %1$d byte</item>
+        <item quantity="other">Ciphertext sent to Bob: %1$d bytes</item>
+    </plurals>
+    <string name="mlkem_alice_secret">Alice\'s secret: %1$s</string>
+    <string name="mlkem_flip_bit">Flip one bit on the way</string>
+    <string name="mlkem_tampered">One bit of the ciphertext was flipped</string>
+    <string name="mlkem_step_decapsulate">3. Bob decapsulates</string>
+    <string name="mlkem_decapsulate">Decapsulate</string>
+    <string name="mlkem_bob_secret">Bob\'s secret: %1$s</string>
+    <string name="mlkem_match">Same secret on both sides</string>
+    <string name="mlkem_mismatch">A different secret, and no error. ML-KEM never reports a bad ciphertext, so an attacker learns nothing from its answers (implicit rejection).</string>
+    <string name="mlkem_step_message">4. Use the secret</string>
+    <string name="mlkem_input_label">Message from Alice</string>
+    <string name="mlkem_send">Alice encrypts</string>
+    <string name="mlkem_read">Bob decrypts</string>
+    <plurals name="mlkem_sealed">
+        <item quantity="one">AES-256-GCM message: %1$d byte</item>
+        <item quantity="other">AES-256-GCM message: %1$d bytes</item>
+    </plurals>
+    <string name="mlkem_read_text">Bob read: %1$s</string>
+    <string name="mlkem_unreadable">Bob cannot read it. His secret is not Alice\'s.</string>
+    <string name="mlkem_sizes_title">Next to X25519</string>
+    <string name="mlkem_sizes_public_key">Public key: %1$d vs 32 bytes, %2$s× bigger</string>
+    <string name="mlkem_sizes_ciphertext">Sent back: %1$d vs 32 bytes, %2$s× bigger</string>
+    <string name="mlkem_sizes_note">X25519 is small and fast, but a big enough quantum computer would break it. That is why TLS now sends both.</string>
+</resources>
