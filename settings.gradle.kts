@@ -29,3 +29,4 @@ include(":core:pqc")
 include(":core:ui")
 
 include(":feature:mlkem")
+include(":feature:mldsa")
