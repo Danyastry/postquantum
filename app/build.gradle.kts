@@ -28,6 +28,7 @@ dependencies {
 
     implementation(projects.feature.mlkem)
     implementation(projects.feature.mldsa)
+    implementation(projects.feature.slhdsa)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
