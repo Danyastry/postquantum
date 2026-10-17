@@ -26,6 +26,11 @@ internal fun Project.configureKotlinAndroid(commonExtension: CommonExtension<*, 
             sourceCompatibility = BuildConfig.javaVersion
             targetCompatibility = BuildConfig.javaVersion
         }
+        packaging {
+            resources {
+                excludes += "/META-INF/versions/9/OSGI-INF/MANIFEST.MF"
+            }
+        }
     }
     extensions.configure<KotlinAndroidProjectExtension> {
         compilerOptions {
