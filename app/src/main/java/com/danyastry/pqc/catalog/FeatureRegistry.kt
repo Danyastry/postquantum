@@ -1,6 +1,7 @@
 package com.danyastry.pqc.catalog
 
 import com.danyastry.pqc.core.ui.FeatureEntry
+import com.danyastry.pqc.feature.comparison.ComparisonFeature
 import com.danyastry.pqc.feature.hybrid.HybridFeature
 import com.danyastry.pqc.feature.mldsa.MlDsaFeature
 import com.danyastry.pqc.feature.mlkem.MlKemFeature
@@ -12,5 +13,6 @@ object FeatureRegistry {
         MlDsaFeature,
         SlhDsaFeature,
         HybridFeature,
+        ComparisonFeature,
     )
 }
