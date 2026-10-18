@@ -1,0 +1,44 @@
+<resources>
+    <string name="hybrid_intro">Chrome, Firefox and Cloudflare already send this in every TLS 1.3 handshake. The secret mixes X25519 and ML-KEM-768, so an attacker has to break both.</string>
+    <string name="hybrid_step_client">1. Browser sends its key share</string>
+    <string name="hybrid_client_hint">An ML-KEM-768 public key followed by an X25519 public key, inside the ClientHello</string>
+    <string name="hybrid_client_hello">Send ClientHello</string>
+    <plurals name="hybrid_client_share">
+        <item quantity="one">Key share: %1$d byte (1184 ML-KEM + 32 X25519)</item>
+        <item quantity="other">Key share: %1$d bytes (1184 ML-KEM + 32 X25519)</item>
+    </plurals>
+    <string name="hybrid_step_server">2. Server answers</string>
+    <string name="hybrid_server_hint">An ML-KEM ciphertext for the browser\'s key, followed by the server\'s own X25519 public key</string>
+    <string name="hybrid_server_respond">Send ServerHello</string>
+    <plurals name="hybrid_server_share">
+        <item quantity="one">Key share: %1$d byte (1088 ML-KEM + 32 X25519)</item>
+        <item quantity="other">Key share: %1$d bytes (1088 ML-KEM + 32 X25519)</item>
+    </plurals>
+    <string name="hybrid_server_secret">Server secret: %1$s</string>
+    <string name="hybrid_step_finish">3. Browser finishes</string>
+    <string name="hybrid_finish">Derive the secret</string>
+    <string name="hybrid_client_secret">Browser secret: %1$s</string>
+    <string name="hybrid_secret_parts">64 bytes: the ML-KEM secret followed by the X25519 secret</string>
+    <string name="hybrid_match">Both sides got the same secret</string>
+    <string name="hybrid_mismatch">The secrets differ</string>
+    <string name="hybrid_session_key">Session key from HKDF-SHA256: %1$s</string>
+    <string name="hybrid_step_message">4. Server sends a message</string>
+    <string name="hybrid_input_label">Message</string>
+    <string name="hybrid_send">Encrypt and send</string>
+    <plurals name="hybrid_sealed">
+        <item quantity="one">Sent %1$d byte of AES-256-GCM</item>
+        <item quantity="other">Sent %1$d bytes of AES-256-GCM</item>
+    </plurals>
+    <string name="hybrid_step_attacker">5. An attacker recorded everything</string>
+    <string name="hybrid_attacker_hint">Harvest now, decrypt later: traffic saved today can be attacked once a quantum computer exists. Pick what the attacker managed to break.</string>
+    <string name="hybrid_breaks_x25519">X25519</string>
+    <string name="hybrid_breaks_mlkem">ML-KEM</string>
+    <string name="hybrid_breaks_both">Both</string>
+    <string name="hybrid_attack">Try to decrypt</string>
+    <string name="hybrid_attack_failed">Still secret. The unbroken half keeps the session key out of reach.</string>
+    <string name="hybrid_attack_read">Read: %1$s. Only breaking both halves exposes the message.</string>
+    <string name="hybrid_sizes_title">Cost on the wire</string>
+    <string name="hybrid_sizes_client">ClientHello key share: 1216 vs 32 bytes with X25519 alone</string>
+    <string name="hybrid_sizes_server">ServerHello key share: 1120 vs 32 bytes</string>
+    <string name="hybrid_sizes_note">The bigger ClientHello no longer fits in one network packet, which broke some old firewalls when browsers turned this on.</string>
+</resources>
