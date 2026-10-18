@@ -1,0 +1,19 @@
+<resources>
+    <string name="comparison_intro">Every scheme runs on this device with BouncyCastle. Each operation is checked as it is timed: the receiver must get the same secret and every signature must verify.</string>
+    <string name="comparison_run">Measure on this device</string>
+    <string name="comparison_run_again">Measure again</string>
+    <string name="comparison_measuring">Measuring %1$s (%2$d of %3$d)</string>
+    <plurals name="comparison_method">
+        <item quantity="one">Median of %1$d run after a warm-up. RSA key generation is slow because it searches for two large primes.</item>
+        <item quantity="other">Median of %1$d runs after a warm-up. RSA key generation is slow because it searches for two large primes.</item>
+    </plurals>
+    <string name="comparison_key_exchange_title">Key exchange</string>
+    <string name="comparison_signatures_title">Signatures</string>
+    <string name="comparison_quantum_safe">Quantum-safe</string>
+    <string name="comparison_classical">Classical</string>
+    <string name="comparison_kex_sizes">Public key %1$d B · sent back %2$d B</string>
+    <string name="comparison_kex_times">Key pair %1$s · send %2$s · receive %3$s</string>
+    <string name="comparison_sig_sizes">Public key %1$d B · signature %2$d B</string>
+    <string name="comparison_sig_times">Key pair %1$s · sign %2$s · verify %3$s</string>
+    <string name="comparison_takeaway">ML-KEM is often faster than X25519 and ECDH while its keys are about 40 times bigger. ML-DSA signs and verifies quickly with signatures of a few kilobytes. SLH-DSA keys are as small as Ed25519 keys, but it pays with slow signing or very big signatures.</string>
+</resources>

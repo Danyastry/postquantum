@@ -30,6 +30,7 @@ dependencies {
     implementation(projects.feature.mldsa)
     implementation(projects.feature.slhdsa)
     implementation(projects.feature.hybrid)
+    implementation(projects.feature.comparison)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
